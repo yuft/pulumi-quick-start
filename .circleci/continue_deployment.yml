@@ -33,6 +33,7 @@ jobs:
           working_directory: src/infrastructure
           command: |            
             pulumi login
+            pulumi plugin rm -a --yes 
             pulumi preview --stack dev
 
 workflows:
