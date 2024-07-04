@@ -33,7 +33,7 @@ jobs:
           working_directory: src/infrastructure
           command: |            
             pulumi login
-            pulumi preview --stack << parameters.stack >>
+            pulumi preview --stack dev
 
 workflows:
   preview:
