@@ -1,0 +1,4 @@
+name: pulumi-quick-start
+runtime: nodejs
+main: src/index.ts
+description: pulumi-quick-start

@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
+    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
+    "outDir": "./bin",                                /* Specify an output folder for all emitted files. */
+    "noImplicitThis": true,                           /* Enable error reporting when 'this' is given the type 'any'. */
+    "noImplicitReturns": true,                        /* Report error when not all code paths in function return a value. */
+    "noFallthroughCasesInSwitch": true,               /* Report errors for fallthrough cases in switch statement. */
+    "pretty": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
