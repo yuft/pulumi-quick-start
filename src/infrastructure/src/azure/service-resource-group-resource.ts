@@ -1,9 +1,10 @@
-import { ResourceGroup } from '@pulumi/azure-native/resources';
+// import { ResourceGroup } from '@pulumi/azure-native/resources';
+import * as azure from '@pulumi/azure-native';
 
 export class ServiceResourceGroupResource {
-  resourceGroup: ResourceGroup;
+  resourceGroup: azure.resources.ResourceGroup;
   constructor() {
-    this.resourceGroup = new ResourceGroup(`my-rg`, {
+    this.resourceGroup = new azure.resources.ResourceGroup(`my-rg`, {
       location: 'EastUS',
       resourceGroupName: `my-rg`,
     });
